@@ -172,7 +172,7 @@ def runGM(gmNum):
 
     print("Time to calculate {}: {:.2f}".format(list_of_GMs[gmNum], tempTime))
 
-    """fig, axs = plt.subplots(2, facecolor=(.2, .2, .2))
+    fig, axs = plt.subplots(2, facecolor=(.2, .2, .2))
     axs[0].plot(Tspec, Aspec, label='Resultant', linewidth=2, color='yellow')
     axs[0].plot(Tspec, Axspec, label='Spectral-X', linewidth=1, color='red')
     axs[0].plot(Tspec, Ayspec, label='Spectral-Y', linewidth=1, color='green')
@@ -183,7 +183,7 @@ def runGM(gmNum):
     axs[0].set_facecolor('black')
     axs[1].set_facecolor('black')
     fig.suptitle(list_of_GMs[gmID], fontsize=12)
-    plt.show()"""
+    plt.show()
 
     return tempTime
 
@@ -239,7 +239,6 @@ def spectral_Shape_factor_interpolation_C_D(periods, Tsite):
 
 processGMList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-"""
 # run parallel processing of ground motion records - no average
 session = None
 def set_global_session():
@@ -251,11 +250,9 @@ def set_global_session():
 if __name__ == '__main__':
     with multiprocessing.Pool(initializer=set_global_session) as pool:
         pool.map(runGM, processGMList)
-"""
 
 # run serial and create average spectrum
-
-for gm in processGMList:
+"""for gm in processGMList:
     runGM(gm)
 
 plt.plot(Tspec, averageSpectrum, label='Resultant', linewidth=2, color='yellow')
@@ -265,6 +262,6 @@ plt.plot(Tspec, spectral_Shape_factor_interpolation_C_D(Tspec, 0.8), label='Desi
 #plt.set_facecolor('black')
 #plt.set_facecolor('black')
 #fig.suptitle('Average', fontsize=12)
-plt.show()
+plt.show()"""
 
 print("Total time: {:.2f}".format(time() - startTime))
