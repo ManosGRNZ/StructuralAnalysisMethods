@@ -8,7 +8,8 @@ It is important to note that the "resultant" acceleration response spectrum does
 
 This is a free (GNU/GPL v.3) project and everyone can use, enjoy and contribute under the terms of the license. 
 
-Practical Notes:
+Practical Notes: 
+
 Mosts tests have been performed under Linux. 
 It has been tested on Windows and it works.
 Adjust the path variable for your computer. The provided file includes my paths for Linux and Windows. 
