@@ -15,3 +15,5 @@ It has been tested on Windows and it works.
 Adjust the path variable for your computer. The provided file includes my paths for Linux and Windows. 
 The default file runs many ground motions in parallel. You may wish to adjust the number of ground motions based on the parallel processing of your computer. Weak laptops still run the code as is but do not benefit much if all 11 ground motions run in parallel. It may be better to run 3 or 4 at a time. Strong CPUs will run fine. 
 The default file runs each ground motion and displays a separate matplotlib window with the results. You can comment-out some sections and enable the last section to obtain the average acceleration spectrums of all ground motions, instead for each ground motion separately. This method does not use parallel processing and may take a while to run. 
+
+Disclaimer: Do not use this software for any serious/important work. It's had less than alpha stage testing. No proper verification has been performed.
