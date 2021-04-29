@@ -4,9 +4,9 @@ from os import path
 import tkinter 
 import tksheet
 
-path_Linux_DL = "/home/manos/pCloudDrive/Programs/python/structural/Amora Checks/List-GM/output/"
-path_Windows = "P:\\Programs\\python\\structural\\Amora Checks\\List-GM\\output\\"
-path_Linux_LT = "/home/mb/pCloudDrive/Programs/python/structural/Amora Checks/List-GM/output/"
+path_Linux_DL = "/home/manos/pCloudDrive/Programs/python/structural/List-GM/output/"
+path_Windows = "P:\\Programs\\python\\structural\\List-GM\\output\\"
+path_Linux_LT = "/home/mb/pCloudDrive/Programs/python/structural/List-GM/output/"
 
 pathMain = path_Linux_DL
 if path.exists(path_Windows):
