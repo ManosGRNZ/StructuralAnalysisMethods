@@ -1,4 +1,4 @@
-# BiaxialResponseSpectrum
+# BiaxialResponseSpectrum & Scaling of ground motions
 
 Python code that takes the acceleration ground motion records as an input and calculates the direct integration acceleration response spectrum for each direction (say Fault-Normal and Fault-Parallel or simply X and Y). At the same time it calculates the maximum acceleration for each T value (i.e. each single degree of freedom) and displays a "resultant" acceleration response spectrum.
 
@@ -17,3 +17,5 @@ The default file runs many ground motions in parallel. You may wish to adjust th
 The default file runs each ground motion and displays a separate matplotlib window with the results. You can comment-out some sections and enable the last section to obtain the average acceleration spectrums of all ground motions, instead for each ground motion separately. This method does not use parallel processing and may take a while to run. 
 
 Disclaimer: Do not use this software for any serious/important work. It's had less than alpha stage testing. No proper verification has been performed.
+
+The files that scale the ground motions to NZS1170.5:2004 have practical value but can only be used at your own risk. 
